@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OMOBOLANLE FASHION COLLECTION</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe4e6, #f3e8ff, #ffe4e6);
+    }
+    nav {
+      background: burgundy;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav h2 {
+      color: #e11d48;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin: 0 0.5rem;
+      color: #444;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #e11d48;
+    }
+    .container {
+      padding: 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      color: #e11d48;
+      font-weight: bold;
+    }
+    .subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-body h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .card-body p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      background: #e11d48;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      margin-top: 3rem;
+      background: burgundy;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      text-align: center;
+      color: #e11d48;
+      margin-bottom: 1rem;
+    }
+    section p {
+      text-align: center;
+      color: #444;
+    }
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 1rem;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .card img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>OMOBOLANLE FASHION</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="title">OMOBOLANLE FASHION COLLECTION</h1>
+    <p class="subtitle">Discover your next favorite outfit. Elegance, comfort, and style—all in one place.</p>
+    <div id="shop" class="grid">
+      <div class="card">
+        <img src="hoodie.jpg" alt="Unisex Hoodie" />
+        <div class="card-body">
+          <h3>Unisex Streetwears</h3>
+          <p>Bold, breathable, and designed for comfort.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="heels.jpg" alt="Heels" />
+        <div class="card-body">
+          <h3>Ladies' Classy Heels</h3>
+          <p>Elevate your style with elegance in every step.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="sneakers.jpg" alt="Sneakers" />
+        <div class="card-body">
+          <h3>Men’s Designer Sneakers</h3>
+          <p>Walk the talk in premium comfort and class.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="bag.jpg" alt="Leather Bag" />
+        <div class="card-body">
+          <h3>Trendy Leather Bag</h3>
+          <p>Carry confidence with our fashion-forward bags.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Omobolanle Fashion Collection is more than just a clothing store—we are your fashion destination. With a handpicked selection of premium outfits, trendy bags, sleek shoes, standout sneakers, and exclusive sign-out wears, we deliver confidence and style for every occasion. Our goal is simple: to make you look and feel amazing.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to place an order? Chat with us on WhatsApp—we're ready to assist you.</p>
+      <a href="https://wa.me/2349034073192" class="btn">Message Us on WhatsApp</a>
+    </section>
+  </div>
+  <a href="https://wa.me/2349034073192" class="whatsapp-icon" target="_blank">&#128222;</a>
+</body>
+</html>
